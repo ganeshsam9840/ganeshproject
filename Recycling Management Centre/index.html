@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Center Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Recycling Center Management</h1>
+            <p>A Premium Solution for Sustainable Recycling</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Add Recycling Entry</h2>
+            <form id="recyclingForm">
+                <div class="form-group">
+                    <label for="customerName">Customer Name:</label>
+                    <input type="text" id="customerName" placeholder="Enter customer name" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerId">Customer ID:</label>
+                    <input type="text" id="customerId" placeholder="Enter customer ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="material">Material:</label>
+                    <select id="material" required>
+                        <option value="glass">Glass</option>
+                        <option value="plastic">Plastic</option>
+                        <option value="paper">Paper</option>
+                        <option value="metal">Metal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity (in kg):</label>
+                    <input type="number" id="quantity" placeholder="Enter quantity" required>
+                </div>
+                <button type="submit">Add Recycling</button>
+                <button type="button" onclick="clearForm()">Clear Form</button>
+            </form>
+        </div>
+        <div id="recyclingList" class="container">
+            <!-- Recycling list will be displayed here -->
+        </div>
+        <div class="container">
+            <button onclick="sortRecyclingByMaterial()">Sort by Material</button>
+            <button onclick="sortRecyclingByQuantity()">Sort by Quantity</button>
+            <button onclick="calculateTotal()">Calculate Total</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

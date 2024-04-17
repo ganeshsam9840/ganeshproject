@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+}
+
+header, footer {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Gradient background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Add more styles as needed */
+
+/* Homepage Styles */
+.home-content {
+    text-align: center;
+}
+
+/* Menu Page Styles */
+.menu-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu-item:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Cart Page Styles */
+.cart-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Checkout Page Styles */
+.checkout-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkout-form input[type="text"], .checkout-form input[type="email"], .checkout-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.checkout-form input[type="submit"] {
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-form input[type="submit"]:hover {
+    background-color: #ff6a4a;
+}
